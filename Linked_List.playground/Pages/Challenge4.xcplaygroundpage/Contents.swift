@@ -63,19 +63,20 @@ func mergeSorted<T: Comparable>(_ left: LinkedList<T>, _ right: LinkedList<T>) -
 
 example(of: "merging two lists") {
     var list = LinkedList<Int>()
-    list.push(3)
-    list.push(2)
+    list.push(9)
+    list.push(5)
     list.push(1)
     
     var list2 = LinkedList<Int>()
-    list2.append(5)
+    list2.append(2)
+    list2.append(3)
     list2.append(6)
     list2.append(7)
+    list2.append(8)
     
     print("First list: \(list)")
     print("Second list: \(list2)")
     
     let mergedList = mergeSorted(list, list2)
     print("MergedList: \(mergedList)")
-    
 }
